@@ -6,6 +6,11 @@ body {
   font-weight: 100;
 }
 
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+
 .content {
   max-width: 960px;
   margin: auto;
@@ -47,7 +52,7 @@ img {
   cursor: pointer;
 }
 
-.img-3 label:hover {
+.img-3 label:active {
   color: #fff;
   background-color: #333;
 }
@@ -77,14 +82,14 @@ section.cloth {
 }
 
 input[type=radio] {
-  display: none;
+  /*display: none;*/
 }
 
 input[type=radio]:checked + label {
   border: 1px solid #000;
 }
 
-input[type=radio]:checked + label + img {
+.img-3 img.show {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
   -moz-opacity: 1;
