@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica Neue', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, 'Source Han Sans', 'Source Han Sans CN', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.content {
+  max-width: 960px;
+  margin: auto;
+  padding: 0 10px 50px;
+}
+
+h1, h2, span {
+  font-weight: 300;
+}
+
+h1 {
+  text-align: right;
+  font-size: 1.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+strong {
+  font-size: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.img-3 {
+  position: relative;
+  text-align: center;
+}
+
+.img-3 label {
+  padding: .5em;
+  border: 1px solid #CCC;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.15);
+  font-size: 1.3em;
+  cursor: pointer;
+}
+
+.img-3 label:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+.img-3 img {
+  position: absolute;
+  top: 3em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  height: auto;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  -webkit-transition: opacity .3s linear;
+  -moz-transition: opacity .3s linear;
+  -ms-transition: opacity .3s linear;
+  -o-transition: opacity .3s linear;
+  transition: opacity .3s linear;
+}
+
+section.cloth {
+  height: 1000px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]:checked + label {
+  border: 1px solid #000;
+}
+
+input[type=radio]:checked + label + img {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: alpha(opacity=100);
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+
+  .img-3 img {
+    top: 5em;
+  }
+
+  section.cloth {
+    height: 700px;
+  }
+
+}
