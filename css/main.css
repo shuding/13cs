@@ -33,6 +33,7 @@ h2 {
 
 strong {
   font-size: 2em;
+  font-family: 'Helvetica Neue', 'Lucida Grande', 'Segoe UI', Helvetica, Arial, 'Source Han Sans', 'Source Han Sans CN', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', sans-serif;
 }
 
 img {
@@ -82,7 +83,7 @@ section.cloth {
 }
 
 input[type=radio] {
-  /*display: none;*/
+  display: none;
 }
 
 input[type=radio]:checked + label {
